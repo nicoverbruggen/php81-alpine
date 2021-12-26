@@ -7,6 +7,7 @@ RUN apk add --no-cache $PHPIZE_DEPS \
 	docker-php-ext-install intl pcntl gd exif zip; \
     pecl install xdebug; \
     docker-php-ext-enable xdebug; \
+    echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini; \
     pecl install imagick; \
     docker-php-ext-enable imagick; \
     apk del $PHPIZE_DEPS; \
