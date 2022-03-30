@@ -19,7 +19,7 @@ The automatically build the container and have it pushed, you must:
 * Create a new release with said tag
 
 The Docker action will automatically build the release and push it under that tag to Docker Hub.
-d
+
 ## Where can I find it?
 
 You can find the image on Docker Hub here: https://hub.docker.com/r/nicoverbruggen/php81-alpine.
